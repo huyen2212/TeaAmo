@@ -1,0 +1,486 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#slideban {
+  padding-top: 20px;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #004e29;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 2s ease;
+}
+
+/* .active,
+.dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*text hover menu*/
+/* .dropbtn {
+  color: #003a0e;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+} */
+
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+} */
+
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ebf9ee;
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #003a0e;
+  padding-top: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ebf9ee;
+}
+#menu ul {
+  list-style-type: none;
+  text-align: center;
+}
+#menu ul li {
+  display: inline-block;
+  padding-top: 20px;
+
+  /* text-align: center; */
+
+/* .prods a {
+  font-family: headingmedi;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #003a0e;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all ease 0.5s;
+  text-align: center;
+} */
+/* .dropdown a {
+  padding-top: 35px;
+  text-decoration: none;
+} */
+/* #menu ul li a:hover {
+  text-decoration: none;
+  background-color: #ebf9ee;
+  color: #381f04;
+  transition: all ease 0.8s;
+} */
+.carousel-caption h3 {
+  font-size: 30px;
+  color: #004e29;
+  font-weight: bold;
+}
+.carousel-item p {
+  font-size: 18px;
+  color: #006837;
+}
+#menu ul {
+  list-style-type: none;
+  text-align: center;
+}
+#menu ul li {
+  display: inline-block;
+  padding-top: 20px;
+
+  /* text-align: center; */
+}
+#menu ul li a {
+  font-family: headingmedi;
+  font-size: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #003a0e;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all ease 0.5s;
+  text-align: center;
+}
+#menu ul li a:hover {
+  text-decoration: none;
+  background-color: #367a58;
+  color: #381f04;
+  transition: all ease 0.8s;
+}
+.dropbtn {
+  background-color: transparent;
+  color: #003a0e;
+
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ebf9ee;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #006837;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #367a58;
+}
+
+#blat {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+#flavor p,
+#chrys p {
+  font-size: 16px;
+  text-align: center;
+  color: #381f04;
+}
+#btnow,
+#btnow2,
+#btmore,
+#btmore2 {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #003a0e;
+  color: white;
+  font-size: 16px;
+  padding-bottom: 13px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.now,
+.now2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+#coll img,
+#coll2 img {
+  padding-bottom: 20px;
+}
+#flavor h3,
+#chrys h3 {
+  font-size: 18px;
+  color: #003a0e;
+  text-align: center;
+  padding-top: 15px;
+}
+.del {
+  text-align: center;
+  padding-top: 15px;
+}
+#prod h1,
+#fea h1,
+#typi h1,
+#blog h1,
+#sell h1 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #003a0e;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#prod h1::before,
+#prod h1::after,
+#fea h1::before,
+#fea h1::after,
+#typi h1::before,
+#typi h1::after,
+#blog h1::before,
+#blog h1::after,
+#sell h1::before,
+#sell h1::after {
+  content: "";
+  background-color: #003a0e;
+  height: 3px;
+  width: 20px;
+  margin: 0 10px;
+  display: inline-block;
+}
+#prod {
+  padding-top: 50px;
+}
+#bamboo,
+#Assam,
+#Pea,
+#thai {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+#bamboo h4,
+#Assam h4,
+#Pea h4,
+#thai h4 {
+  font-size: 18px;
+  color: #003a0e;
+  text-align: center;
+  padding-top: 10px;
+}
+#bamboo p,
+#Assam p,
+#Pea p,
+#sell p,
+#thai p {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+#test {
+  padding-top: 40px;
+}
+/*typical product*/
+.butbuy {
+  font-size: 16px;
+  background-color: #003a0e;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 8px;
+  text-decoration: none;
+}
+.Camomile p,
+#Flower p,
+#Behora p,
+#cada p,
+#famouse p,
+#decor p {
+  text-align: center;
+  font-size: 16px;
+}
+.Camomile h4,
+#famouse h4,
+#decor h4 {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15px;
+  color: #003a0e;
+}
+.buy,
+.add {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cart {
+  font-size: 16px;
+  background-color: #66896e;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 8px;
+  text-decoration: none;
+}
+.buy a,
+.add a {
+  text-decoration: none;
+  color: #fff;
+}
+.Camomile {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+#list {
+  padding-top: 30px;
+}
+#above {
+  padding-bottom: 30px;
+}
+/*hover TeaAmo's Special*/
+#multy,
+#decor {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content:hover #multy,
+.content:hover #decor {
+  opacity: 0.3;
+}
+
+.content:hover .middle {
+  opacity: 1;
+}
+
+.te {
+  background-color: #003a0e;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 15px;
+}
+.te a {
+  text-decoration: none;
+  color: #fff;
+}

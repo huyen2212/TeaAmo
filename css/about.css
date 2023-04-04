@@ -1,0 +1,140 @@
+ul.addre {
+  padding: 10px 0px;
+  list-style: none;
+}
+ul.addre li {
+  display: inline;
+  font-size: 18px;
+  font-family: ebgaramondmedi;
+  color: gray;
+}
+ul.addre li + li::before {
+  padding: 8px;
+  color: black;
+  content: "\003E";
+}
+ul.addre li a {
+  color: #00341b;
+  text-decoration: none;
+}
+ul.addre li a:hover {
+  color: aquamarine;
+  text-decoration: none;
+}
+/**/
+#after {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-left: 33px;
+  font-size: 16px;
+  color: #004e29;
+}
+#story img {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+#after h3 {
+  font-size: 18px;
+  font-family: ebgaramondmedi;
+  color: #004e29;
+  text-align: center;
+}
+.service h3 {
+  font-family: ebgaramondmedi;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.service p {
+  font-size: ralewayregular;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.service {
+  padding-top: 30px;
+  transition: all 0.3s;
+}
+
+.service:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#valua {
+  background-color: #cce1d7;
+  padding-top: 20px;
+}
+/*cty*/
+/*cty*/
+#cty {
+  background-color: #33865f;
+  padding-top: 1px;
+}
+#cty p {
+  font-family: ralewayregular;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 150px;
+}
+#cty img {
+  padding-top: 0px;
+}
+.ctysm p {
+  font-family: ralewayregular;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 80px;
+}
+.ctysm {
+  background-color: #33865f;
+  padding-top: 5px;
+  height: 350px;
+}
+.ctysm img {
+  padding-top: 60px;
+}
+.core {
+  background-color: #00341b;
+}
+.core h1,
+h4 {
+  font-size: 22px;
+  font-family: ebgaramondmedi;
+  color: #fff;
+  text-align: center;
+  padding-top: 70px;
+}
+.core p {
+  font-family: ralewayregular;
+  font-size: 16px;
+  color: #fff;
+  width: 80%;
+  padding-top: 50px;
+}
+.core h4 {
+  font-size: 22px;
+  font-family: ebgaramondmedi;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+.process p {
+  font-family: ralewayregular;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 20%;
+  padding-bottom: 20px;
+}
+
+.process a:hover {
+  color: gray;
+}
+.process a {
+  font-size: 22px;
+  font-family: ebgaramondmedi;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 30%;
+  padding-top: 12px;
+}

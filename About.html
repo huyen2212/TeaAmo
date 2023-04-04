@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="css/style-4.css" rel="stylesheet">
+	<link href="css/textstyle.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+	<link href="css/product.css" rel="stylesheet">
+	
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script src="js/text.js"></script>
+	
+	<script> 
+	    $(document).ready(function(){
+			$("#bgnavmob").hide();
+			$("#baricon").click(function(){
+				$("#bgnavmob").slideToggle();
+			});
+		});
+	</script>
+	 <script>
+		 $(document).ready(function(){
+  			$(".owl-carousel").owlCarousel({
+				  
+				  margin: 20,
+				  loop: true,
+				  autoplay: true,
+				  responsive:{
+					0:{items: 2,},
+					576:{items: 2,},
+					768:{items: 2,},
+					992:{items: 3,},
+					1200:{items: 3,},				
+				  }
+			  });
+		});
+	 </script>
+		
+	
+  </head>
+  <body>
+	<!--header-->
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="d-lg-none
+							col-md-1
+							col-sm-1
+							col-1" id="baricon">
+							<i class="fas fa-bars"></i>
+						</div> <!--icon navi for md & sm-->
+				<!--logo-->
+				<div class="col-xl-3 offset-xl-4
+				col-lg-3 offset-lg-4
+				col-md-9  
+				col-sm-9
+				col-9  justify-content" id="logo">
+				<img  src="imgs/logo.png" >
+				</div>
+				<!--search bar-->
+				<div class="d-none d-lg-block
+				col-xl-2 offset-xl-10
+				col-lg-2 offset-lg-10" id="search">
+					<form method="post" action="" >
+						<input type="text" placeholder="Search..." id="fill">
+					</form>	
+				
+				</div>	
+				<!--icon search-->
+				<div class="col-xl-1
+							col-lg-1
+							col-md-1 
+							col-sm-1
+							col-1" id="searchicon">
+					<div class="">
+						<a href=""><i class="fa fa-search"></i></a>						
+					</div>			
+				</div>
+				<!--icon cart-->
+				<div class="d-lg-none
+							col-md-1
+							col-sm-1
+							col-1" id="carticon">
+					<div class="">
+						<a href=""><i class="fa-solid fa-cart-shopping"></i></a>						
+					</div>
+				</div>													
+			</div>
+			<!--navigation-->
+			<div class="row justify-content-center">
+				<div class="col-xl-10 
+				col-lg-10 offset-lg-1 d-none d-lg-block" id="menu">
+					<ul class="nav justify-content">
+						<li><a href="tea-3.html">Home</a></li>
+						<li><a href="About.html">About Us</a></li>
+						<div class="dropdown">
+							<button class="dropbtn">Products</button>
+							<div class="dropdown-content">
+							<a href="Detail.html">BLack Tea</a>
+							<a href="Detail.html">Rose Tea</a>
+							<a href="Detail.html">Jasmine Tea</a>
+							<a href="Detail.html">Green Tea</a>
+							<a href="Detail.html">Earl Grey Tea</a>
+							<a href="Detail.html">Chrysanthemum Tea</a>
+							</div>
+						  </div>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Recruiment</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Navi Mobile-->
+	 <div class="container-fluid  d-lg-none" id="bgnavmob">
+		<div class="row">
+			<div class="col-md-12
+						col-sm-12
+						col-12
+						" id="navimobi">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav link" href="tea-3.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav link" href="About.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav link" href="product.html" id="prod">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav link" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav link" href="#">Recruiment</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav link" href="#">Contact</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div> 
+	 
+
+	<!--slide banner 1-->
+	<div class="container-fluid" id="slideban">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+			  <li data-target="#demo" data-slide-to="0" class="active"></li>
+			  <li data-target="#demo" data-slide-to="1"></li>
+			  <li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="imgs/banner1.jpg" alt="Los Angeles" class="img-fluid">
+				<div class="carousel-caption">
+				  <h3>The Freshest For Life</h3>
+				</div>   
+			  </div>
+			  <div class="carousel-item">
+				<img src="imgs/slide2.jpg" alt="Chicago" class="img-fluid">
+				<div class="carousel-caption">
+				  <h3>Rose Tea</h3>
+				  <p>Our Bestselling</p>
+				</div>   
+			  </div>
+			  <div class="carousel-item">
+				<img src="imgs/slide3.jpg" alt="New York" class="img-fluid">
+				<div class="carousel-caption">
+				  <h3>Jasmine Tea</h3>
+				  <p>The Must Try Tea</p>
+				</div>   
+			  </div>
+			</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+			  <span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+			  <span class="carousel-control-next-icon"></span>
+			</a>
+		  </div> 
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12
+							col-lg-12
+							col-md-12
+							col-sm-12
+							col-12 adrba">
+					<ul class="addre">
+						<li><a href="tea-3.html">Home</a></li>
+						<li>About Us</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--detail product-->
+    <div class="container-fluid" id="brand"> 
+        <div class="container" >
+            <div class="row">
+                <div class="col-xl-6
+                            col-lg-6
+                            col-md-6
+                            col-sm-12
+                            col-12" id="story">
+                    <img src="imgs/fea3.jpg" class="img-fluid">
+                </div>
+                <div class="col-xl-6
+                            col-lg-6
+                            col-md-6
+                            col-sm-12
+                            col-12" id="after">
+                    <h3>BRAND STORY</h3>
+                    <P>Through years of development efforts, TeaAmo has become popular with customers
+                    from many countries and has become one of the top trusted tea brands in the world.</P>
+					<p>TeaAmo is continuously a pioneer brand with many ideas.
+					Innovative ideas at the forefront of the tea and coffee industry.</p>
+                </div>
+            </div>
+        </div>     
+    </div>
+	<!--cty for xl-->
+	<div class="container-fluid" id="cty"> 
+        <div class="container" >
+            <div class="row">
+                <div class="col-xl-6
+                            col-lg-6
+                            col-md-6
+                            col-sm-12
+                            col-12" id="story">
+					<p>Through years of development efforts,
+						TeaAmo has become popular with customers from many countries
+						and has become one of the top trusted tea brands in the world.</p>
+                </div>
+                <div class="col-xl-6
+                            col-lg-6
+                            col-md-6
+                            col-sm-12
+                            col-12" id="after">
+					<img src="imgs/cty.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>     
+    </div>
+	
+    <div class="container-fluid" id="valua"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3
+                            col-lg-3
+                            col-md-6
+                            col-sm-6
+                            col-6 service">
+                    <img src="imgs/per.png" class="img-fluid">
+                    <h3>FRIENDLY & PROFESSIONAL 
+                        SERVICES</h3>
+                    <p>TeaAmo wishes to best satisfy customers
+                    with professional and friendly service, always listening to customers' contributions.</p>
+                </div>
+                <div class="col-xl-3
+                            col-lg-3
+                            col-md-6
+                            col-sm-6
+                            col-6 service">
+                    <img src="imgs/clock.png" class="img-fluid">
+                    <h3>QUICK AND 
+                        EFFECTIVE</h3>
+                    <p>TeaAmo always ensures fast, accurate and satisfied shipping services.</p>
+                </div>
+                <div class="col-xl-3
+                            col-lg-3
+                            col-md-6
+                            col-sm-6
+                            col-6 service">
+                    <img src="imgs/star.png" class="img-fluid">
+                    <h3>TOP QUALITY</h3>
+                    <p>Safe, hygienic and delicious. The use of safe, natural and hygienic ingredients is TeaAmo's top priority.
+                   .</p>
+                </div>
+                <div class="col-xl-3
+                            col-lg-3
+                            col-md-6
+                            col-sm-6
+                            col-6 service">
+                    <img src="imgs/heart.png" class="img-fluid">
+                    <h3>RELIABLE BRAND</h3>
+                    <p>Based on two core foundations of Quality and Service, TeaAmo
+                    always strives to build and maintain a reliable brand image in the eyes of customers.</p>
+                </div>
+            </div>
+        </div>
+    </div> <!--our service-->
+	<!--valua core-->
+	<div class="container fluid core">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-3
+							col-md-4
+							col-sm-4
+							col-4">
+					<h1>Core Valuas</h1>
+				</div>
+				<div class="col-xl-8 offet-xl-1
+							col-lg-8 offet-md-1
+							col-md-7 offet-md-1
+							col-sm-7 offet-sm-1
+							col-7 offset-1">
+					<p>Through the development process of TeaH Company - the founder of the
+					TeaAmo brand in Vietnam, the brand has grown rapidly to become one of the
+					familiar destinations for young people who love tea culture.</p>
+				</div>
+			</div>
+			<h1>DEVELOPMENT PROCESS</h1>
+			<div class="row justify-content-center">
+				<div class="col-xl-3
+							col-lg-3
+							col-md-6
+							col-sm-6
+							col-6 process">
+					<img src="imgs/cty.jpg" class="img-fluid">
+					<a href="">2010 - 2014</a>				
+					<p>TeaH opens its first TeaAmo store at 79 Ho Tung Mau,
+					District 1, Ho Chi Minh City</p>					
+				</div>
+				<div class="col-xl-3
+							col-lg-3
+							col-md-6
+							col-sm-6
+							col-6 process">
+					<img src="imgs/store1.jpg" class="img-fluid">
+					<a href="">2015 - 2018</a>					
+					<p>Develop 3 more stores in Ho Chi Minh City...</p>					
+				</div>
+				<div class="col-xl-3
+							col-lg-3
+							col-md-6
+							col-sm-6
+							col-6 process">
+					<img src="imgs/store2.jpg" class="img-fluid">
+					<a href="">2018 - 2020</a>					
+					<p>Developing 8 more stores across the country,
+						expanding to other provinces
+					</p>					
+				</div>
+				<div class="col-xl-3
+							col-lg-3
+							col-md-6
+							col-sm-6
+							col-6 process">
+					<img src="imgs/store3.jpg" class="img-fluid">
+					<a href="">2021</a>		
+					<p>Developing branches abroad <br>
+						+ 5 stores in China<br>
+						+ 3 stores in Japan</p>					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+  <!--Footer-->
+  <div class="container-fluid" id="footer">
+    <div class="container">
+		<div class="row justify-content-center">
+			<!--column 1-->
+			<div class="col-xl-3 offset-xl-0 
+						col-lg-3 offset-lg-0
+						col-md-4 offset-md-2
+						col-sm-9 offset-sm-3 
+						col-9 offset-3 "id="Contact">
+				<img src="imgs/logowhite.png">
+				<ul id="infoicon">
+					<li>
+						<span><i class="fa-solid fa-phone"></i></span>
+						<span> 0123456789</span>
+					</li>
+					<li>
+						<span><i class="fa-solid fa-envelope"></i></span>
+						<span> teaamo@gmail.com</span>
+					</li>
+					</ul>
+					<ul class="social-icon">
+					<li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-instagram-square"></i></a></li>
+					</ul>								
+			</div>                
+			<!--column 2 navigation-->
+			<div class="col-xl-2 offset-xl-0
+						col-lg-2 offset-lg-0
+						col-md-5 offset-md-1
+						col-sm-9 offset-sm-3
+						col-9 offset-3" id="navifoot">
+			<ul>       
+				<li><a href="tea-3.html">Home</a></li>
+				<li><a href="About.html">About Us</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Recruiment</a></li>       
+				<li><a href="">Contact</a></li>
+			</ul>
+			</div>
+			<!--column 3 contact-->
+			<div class="col-xl-2 offset-xl-0
+						col-lg-2 offset-lg-0
+						col-md-4 offset-md-2
+						col-sm-9 offset-sm-3 
+						col-9 offset-3" id="contactfoot">
+				<ul>       
+				<li><a href="">Contact</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Order</a></li>
+				<li><a href="">Store</a></li>
+				</ul>
+			</div>
+			<!--column 4 menu-->
+			<div class="col-xl-2 offset-xl-0
+						col-lg-2 offset-lg-0
+						col-md-5 offset-md-1
+						col-sm-9 offset-sm-3
+						col-9 offset-3" id="newsfoot">
+				<ul>       
+				<li><a href="">Menu</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">Events</a></li>
+				<li><a href="">Shipping</a></li>
+				</ul>
+			</div>
+			<!--column final subscribe-->
+			<div class="col-xl-3 offset-xl-0
+						col-lg-3 offset-lg-0
+						col-md-6 offset-md-0
+						col-sm-10 offset-sm-2
+						col-12" id="touch">
+			<h1>Stay In Touch!!</h1>
+			<p>Enter your email to receive information about our events</p>
+			<form method="post" action="">
+				<input type="text" placeholder="Your email..." id="mail">
+				<button id="send"><i class="far fa-paper-plane"></i></button>
+			</form>	
+				
+			</div>
+		</div>
+  	</div>	
+		<p id="copy">Copyright (C) 2017 TeaAmo. All Rights Reserved</p>	
+   </div>
+  </body>
+</html>

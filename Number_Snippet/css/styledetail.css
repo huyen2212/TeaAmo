@@ -1,0 +1,126 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.eot), url(../fonts/OpenSans-Bold.ttf),
+    url(../fonts/OpenSans-Bold.woff);
+}
+
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url(../fonts/OpenSans-ExtraBold.eot),
+    url(../fonts/OpenSans-ExtraBold.ttf), url(../fonts/OpenSans-ExtraBold.woff);
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url(../fonts/OpenSans-SemiBold.eot), url(../fonts/OpenSans-SemiBold.ttf),
+    url(../fonts/OpenSans-SemiBold.woff);
+}
+
+@font-face {
+  font-family: OpenSans-Medium;
+  src: url(../fonts/OpenSans-Medium.eot), url(../fonts/OpenSans-Medium.ttf),
+    url(../fonts/OpenSans-Medium.woff);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.eot), url(../fonts/OpenSans-Regular.ttf),
+    url(../fonts/OpenSans-Regular.woff);
+}
+
+@font-face {
+  font-family: CoopBL;
+  src: url(../fonts/COOPBL.eot), url(../fonts/COOPBL.ttf),
+    url(../fonts/COOPBL.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: OpenSans-SemiBold;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: OpenSans-Bold;
+}
+
+.img-gallery {
+  margin-bottom: 15px;
+}
+
+.img-thumbnail {
+  border-radius: 1.25rem;
+}
+
+/* ==================== EXTRA LARGE ====================*/
+@media only screen and (min-width: 1200px) {
+  #thumbnail img {
+    margin-bottom: 15px;
+  }
+}
+
+/* ==================== LARGE ====================*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #thumbnail img {
+    margin-bottom: 15px;
+  }
+}
+
+/* ==================== MEDIUM ====================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #thumbnail img {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  #thumbnail img:last-child {
+    margin-right: 0;
+  }
+
+  .img-thumbnail {
+    height: 160px;
+  }
+}
+
+/* ==================== SMALL ====================*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  #thumbnail img {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  #thumbnail img:last-child {
+    margin-right: 0;
+  }
+
+  .img-thumbnail {
+    height: 110px;
+  }
+}
+
+/* ==================== EXTRA SMALL ====================*/
+
+@media only screen and (max-width: 575px) {
+  #thumbnail img {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  #thumbnail img:last-child {
+    margin-right: 0;
+  }
+
+  .img-thumbnail {
+    height: 95px;
+  }
+}
